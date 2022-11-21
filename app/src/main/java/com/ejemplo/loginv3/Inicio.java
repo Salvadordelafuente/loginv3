@@ -1,17 +1,19 @@
-package com.example.loginv3;
+package app.ejemplo.loginv3;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.ejemplo.loginv3.R;
 
 public class Inicio extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class Inicio extends AppCompatActivity {
     ProgressBar progressBar;
     int progreso = 0;
     Handler handler = new Handler();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class Inicio extends AppCompatActivity {
 
         progressBar = findViewById(R.id.pbhorizontal);
         tvTexto = findViewById(R.id.tvTexto);
+
+
 
         new Thread(new Runnable() {
             @Override
